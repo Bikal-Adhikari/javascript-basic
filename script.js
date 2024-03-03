@@ -105,7 +105,21 @@ alert("hehehe");*/
 
 // Array		//[“data”, 1232, {}, []]
 
-const person = ["Bikal", 25, ["apple", "banana"]];
-console.log(person);
+// const person = ["Bikal", 25, ["apple", "banana"]];
+// console.log(person);
 // Function 	// function()
 // Es6 	// const sayHi ()=> “hi”
+
+// const result = Math.PI;
+
+// const result = Math.round(4.7);
+// const result = Math.ceil(4.4);
+// const result = Math.floor(4.7);
+// const result = Math.pow(8, 2);
+// const result = Math.sqrt(64);
+
+// const result = Math.min(0, 150, 30, 20, -8, -200);
+// const result = Math.max(0, 150, 30, 20, -8, -200);
+const result = Math.random() * 100; //0 - 9.999....
+
+console.log(result);
