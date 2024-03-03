@@ -52,6 +52,15 @@ alert("hehehe");*/
 // >, >=
 // <, <=
 
+// let a = 5;
+// const b = 5;
+
+// const result = a == b;
+// const result = a > b;
+// const result = a >= b;
+// const result = a <= b;
+// console.log(result);
+
 // Logical Operators
 // &&
 // ||
