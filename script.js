@@ -66,3 +66,46 @@ alert("hehehe");*/
 // ||
 // !
 // Ternary
+
+// Data types
+// Primitives
+// String  		// “prem acharya”
+// Number 	//123
+// Boolen		// true or false
+// Undefined	// not defined in system memory
+// Null  		// defined in system memory but no value assigned
+
+// console.log(typeof `sfdf`);
+// console.log(typeof sf);
+// console.log(typeof true);
+// console.log(typeof "true");
+
+// console.log(typeof null);
+
+// let name = "Bikal";
+// const age = 25;
+// const p2 = name;
+// console.log(name, p2);
+
+// name = "John";
+// console.log(name, p2);
+
+// Reference Types
+// Object 		//{key:”value”}
+
+// const person = {
+//   name: "Bikal",
+//   age: 20,
+// };
+// person2 = person;
+
+// console.log(person2, person);
+// person.name = "John";
+// console.log(person2, person);
+
+// Array		//[“data”, 1232, {}, []]
+
+const person = ["Bikal", 25, ["apple", "banana"]];
+console.log(person);
+// Function 	// function()
+// Es6 	// const sayHi ()=> “hi”
