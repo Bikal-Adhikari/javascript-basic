@@ -31,16 +31,29 @@ alert("hehehe");*/
 // --	Decrement
 
 // console.log(5 + 3);
-let a = 5;
-const b = 3;
+// let a = 5;
+// const b = 3;
 
-// const ans = a + b;
-// const ans = a - b;
-// const ans = a * b;
-// const ans = a / b;
-// const ans = a ** b;
-// const ans = a % b;
-a++;
-// console.log(a++);
-console.log(++a);
-console.log(a);
+// // const ans = a + b;
+// // const ans = a - b;
+// // const ans = a * b;
+// // const ans = a / b;
+// // const ans = a ** b;
+// // const ans = a % b;
+// // a++;
+// a--;
+// // console.log(a++);
+// console.log(--a);
+// console.log(a);
+
+// Comparisons
+// ==
+// ===
+// >, >=
+// <, <=
+
+// Logical Operators
+// &&
+// ||
+// !
+// Ternary
