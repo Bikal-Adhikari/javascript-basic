@@ -9,13 +9,38 @@ alert("hehehe");*/
 // Let name = “prem”
 // Const  lastName = “acharya”
 
-var name = "Bikal Adhikari";
-let add = "sydney";
-const dob = "2020-20-2";
+// var name = "Bikal Adhikari";
+// let add = "sydney";
+// const dob = "2020-20-2";
 
-console.log(name, add, dob);
+// console.log(name, add, dob);
 
-name = "sam";
-add = "new york";
-// dob = "1998-05-30";
-console.log(name, add);
+// name = "sam";
+// add = "new york";
+// // dob = "1998-05-30";
+// console.log(name, add);
+
+// Arithmetic
+// +	Addition
+// -	Subtraction
+// *	Multiplication
+// **	Exponentiation (ES2016)
+// /	Division
+// %	Modulus (Division Remainder)
+// ++	Increment
+// --	Decrement
+
+// console.log(5 + 3);
+let a = 5;
+const b = 3;
+
+// const ans = a + b;
+// const ans = a - b;
+// const ans = a * b;
+// const ans = a / b;
+// const ans = a ** b;
+// const ans = a % b;
+a++;
+// console.log(a++);
+console.log(++a);
+console.log(a);
