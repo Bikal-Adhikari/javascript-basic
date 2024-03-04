@@ -217,12 +217,79 @@ const pet = "cow";
 // clearTimeout
 // setInterval
 
-let counter = 0;
-let counterInterval = setInterval(() => {
-  console.log(counter++);
-  if (counter == 5) {
-    clearInterval(counterInterval);
-  }
-}, 1000);
+// let counter = 0;
+// let counterInterval = setInterval(() => {
+//   console.log(counter++);
+//   if (counter == 5) {
+//     clearInterval(counterInterval);
+//   }
+// }, 1000);
 
 // clearInterval
+
+// JS - ES6
+// Let, Const
+// Arrow function
+
+// function bio() {
+//   console.log("hey this is Bikal from australia");
+//   return "its done";
+// }
+
+// const bio = () => "Hey I'm bikal from Australia";
+// const bio = () => {
+//   return "Hey I'm bikal from Australia";
+// };
+// const result = bio();
+// console.log(result);
+
+// Template literals
+
+// const bio = (name, place) => {
+//   //   return "hey this is " + name + " from " + place;
+//   return `hey this is ${name} from ${place}`;
+// };
+// const p1 = bio("Bikal", "Australia");
+// console.log(p1);
+// const p2 = bio("John", "UK");
+// console.log(p2);
+
+// Destructuring
+
+// Default + Rest + Spread
+
+// Loops
+// for(i = 0; i < cars.length; i++)
+
+// for (let i=0; ConditionRule; ++ --)
+// for (let i = 0; i < 10; i++) {
+//   console.log(i);
+// }
+// for (let i = 0; i < 10; i++) {
+//   //   console.log(i);
+//   //   if (i % 2 == 0) {
+//   //     continue;
+//   //   }
+//   if (i == 6) {
+//     break;
+//   }
+//   console.log(i);
+// }
+
+// for/in for (x in person) → for object
+// for /of for (x of cars) → for array
+
+// while (condition)
+// let i = 0;
+// while (i < 10) {
+//   console.log(i++);
+// }
+
+// do/while | do{}while()
+// let i = 0;
+// do {
+//   console.log(i++);
+// } while (i < 10);
+// Break out of loop
+// Continue, in loop to exit 1 loop
+// Break, break out the loop or switch
