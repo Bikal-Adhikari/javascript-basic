@@ -190,20 +190,39 @@ const pet = "cow";
 // }
 
 // Error Handling
-try {
-  //code block
-  const name = "Bikal";
-  console.log(name);
-  //   console.log(first);
-  throw new Error("token expired");
-} catch (error) {
-  //catch error and handle
-  console.log(error.message);
+// try {
+//   //code block
+//   const name = "Bikal";
+//   console.log(name);
+//   //   console.log(first);
+//   throw new Error("token expired");
+// } catch (error) {
+//   //catch error and handle
+//   console.log(error.message);
 
-  if (error.message.includes("token expired")) {
-    console.log("send text");
+//   if (error.message.includes("token expired")) {
+//     console.log("send text");
+//   }
+// } finally {
+//   //run finally regardless
+//   console.log(Date(), "function executed successfully");
+// }
+
+// Scheduling
+// setTimeout
+// console.log("before st");
+// setTimeout(() => {
+//   console.log("after st");
+// }, 2000); //2s
+// clearTimeout
+// setInterval
+
+let counter = 0;
+let counterInterval = setInterval(() => {
+  console.log(counter++);
+  if (counter == 5) {
+    clearInterval(counterInterval);
   }
-} finally {
-  //run finally regardless
-  console.log(Date(), "function executed successfully");
-}
+}, 1000);
+
+// clearInterval
