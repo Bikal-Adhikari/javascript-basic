@@ -161,7 +161,7 @@ alert("hehehe");*/
 
 // Else if
 
-const pet = "cow";
+// const pet = "cow";
 
 // if (pet === "cat") {
 //   console.log("Meow!");
@@ -312,9 +312,9 @@ const pet = "cow";
 // console.log(ans);
 
 // String
-const hi = " hi there ";
-const hey = 'I\'m "bikal" from sydney ';
-const str = hi + hey;
+// const hi = " hi there ";
+// const hey = 'I\'m "bikal" from sydney ';
+// const str = hi + hey;
 // console.log(str);
 
 // Escape character
@@ -332,6 +332,8 @@ const str = hi + hey;
 // const value = str[26];
 // const value = str.charAt[20];
 
+// const value = str.split("bikal");
+
 // Slice, substring, substr
 
 // const value = str.slice(3, 5);
@@ -348,13 +350,170 @@ const str = hi + hey;
 // toUpperCase, toLowerCase
 
 // const value = str.toUpperCase();
-const value = str.toLowerCase();
+// const value = str.toLowerCase();
 
-console.log(str);
-console.log(value);
+// console.log(str);
+// console.log(value);
+
 // Array[]
+
+// const arg = [
+//   "sdfsfs",
+//   888,
+//   true,
+//   null,
+//   undefined,
+//   [789, 67467],
+//   {
+//     name: "John",
+//     skills: ["html", "css"],
+//   },
+// ];
+
+// // console.log(arg, arg[5][0]);
+// // console.log(arg, arg[6].skills[1]);
+// // console.log(arg, arg[6]["skills"][1]);
+
+// const fruits = ["banana", "apple", "orange", "pear"];
+// // const fruits = ["banana", "34", "5", "apple", "orange", "pear"];
+// const veg = ["potato", "tomato"];
 // Length, push , pop, shift, unshift, toString, join,[], splice, slice, indexOf
-// Short, reverse
+// const value = fruits.length;
+// fruits.push("grape");
+// fruits.unshift("mango");
+
+// const value = fruits.pop();
+// const value = fruits.shift();
+// const value = fruits.toString().split(",");
+// const value = fruits.join("-").split("-");
+// const value = fruits.slice(1, 3);
+// const value = fruits.splice(1, 3);
+// const value = fruits.splice(1, 0, "watermelon");
+// const value = fruits.indexOf("apple");
+
+// Sort, reverse
+
+// fruits.sort((a, b) => b - a);
+// fruits.reverse();
+
+// For
+// for (let i = 0; i < fruits.length; i++) {
+//   console.log(fruits[i]);
+// }
+
 // forEach, map
+
+// fruits.forEach((item, index) => {
+//   console.log(item, index);
+// });
+
+// const newArg = fruits.map((item, i) => {
+//   //   return item.toUpperCase();
+//   return "ID-" + item.toUpperCase();
+// });
+
+// console.log(fruits, newArg);
+
 // Filter, reduce, every
+// const newArg = fruits.map((item, i) => {
+//   if (item.includes("n")) {
+//     return item;
+//   }
+// });
+
+// const newArg = fruits.filter((item, i) => {
+//   //   if (item.includes("n")) {
+//   //     return item;
+//   //   }
+//   return item.includes("n");
+// });
+
+// const newArg = fruits.filter((item, i) => item.includes("n"));
+
+// const money = [234, 456, 678, 910];
+// const total = money.reduce((subTtl, item) => {
+//   return subTtl + item;
+// }, 0);
+
+// console.log(total);
+
+// const result = fruits.every((item) => item.includes("a"));
+// console.log(result);
+
 // forOf
+
+// for (let value of fruits) {
+//   console.log(value);
+// }
+
+// console.log(fruits);
+
+// console.log(fruits, newArg);
+
+// const dt = Array(100).fill("😊");
+// console.log(dt);
+
+// Challenge #1
+//1. Create an array of 50 random numbers range between 1 and 100 programmatically
+//2. Sort the array in the descending order
+//3. Get the total value of array
+// 4. Create odd numbers and even numbers array based on the original array
+// 5. remove all the duplicate and create new array
+
+// let arr = [];
+// for (i = 0; i < 50; i++) {
+//   arr[i] = Math.ceil(Math.random() * 100 + 1);
+// }
+
+// console.log(arr);
+
+// const desd = arr.sort((a, b) => b - a);
+// console.log(desd);
+
+// const total = desd.reduce((subTtl, item) => {
+//   return subTtl + item;
+// }, 0);
+
+// console.log(total);
+
+// let oddarr = [];
+// let evnarr = [];
+// for (i = 0; i < 50; i++) {
+//   if (arr[i] % 2 === 0) {
+//     evnarr = [...evnarr, arr[i]];
+//   } else {
+//     oddarr = [...oddarr, arr[i]];
+//   }
+// }
+
+// console.log(oddarr);
+// console.log(evnarr);
+
+for (i = 0; i < 50; i++) {}
+
+// Challenge #2
+// Create an array of 50 unique random numbers range between 1 and 100 programitically
+
+// Challange #3
+
+// console.log("1. first one");
+
+// const hehe = () => {
+//   console.log("2. hehe fuctioin");
+// };
+
+// setTimeout(() => {
+//   console.log("3. set time out");
+// }, 5000);
+
+// const yoyo = () => {
+//   console.log("4. hehe fuctioin");
+// };
+// console.log("5. after yoyo");
+// yoyo();
+// setTimeout(() => {
+//   console.log("6. set time out");
+// }, 0);
+// hehe();
+// console.log("7. last line");
+// 1 7
