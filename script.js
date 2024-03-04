@@ -174,17 +174,36 @@ const pet = "cow";
 // }
 // Switch
 
-switch (pet) {
-  case "cat":
-    console.log("Meow!");
-    break;
-  case "dog":
-    console.log("Woof");
-    break;
-  case "cow":
-    console.log("Moooowwww" + "!");
-    break;
+// switch (pet) {
+//   case "cat":
+//     console.log("Meow!");
+//     break;
+//   case "dog":
+//     console.log("Woof");
+//     break;
+//   case "cow":
+//     console.log("Moooowwww" + "!");
+//     break;
 
-  default:
-    console.log("duyvsviuhak buidvbdsic");
+//   default:
+//     console.log("duyvsviuhak buidvbdsic");
+// }
+
+// Error Handling
+try {
+  //code block
+  const name = "Bikal";
+  console.log(name);
+  //   console.log(first);
+  throw new Error("token expired");
+} catch (error) {
+  //catch error and handle
+  console.log(error.message);
+
+  if (error.message.includes("token expired")) {
+    console.log("send text");
+  }
+} finally {
+  //run finally regardless
+  console.log(Date(), "function executed successfully");
 }
