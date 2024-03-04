@@ -293,3 +293,68 @@ const pet = "cow";
 // Break out of loop
 // Continue, in loop to exit 1 loop
 // Break, break out the loop or switch
+
+// Data Manipulation
+
+// Number
+// safe number  -2^53 -1 to 2^53 -1
+// const num = 874_979_379_376_937;
+// console.log(num);
+// ParseInt, float
+
+// NaN: Not a Number; isNaN()
+// const num = "5.4w";
+// const ans = +num;
+// const ans = Number(num);
+// const ans = isNaN(num);
+// const ans = parseInt(num);
+// const ans = parseFloat(num);
+// console.log(ans);
+
+// String
+const hi = " hi there ";
+const hey = 'I\'m "bikal" from sydney ';
+const str = hi + hey;
+// console.log(str);
+
+// Escape character
+// Length
+
+// console.log(str.length);
+
+// indexOf, lastIndexOf, search
+// const value = str.indexOf("e");
+// const value = str.lastIndexOf("Sydney");
+// const value = str.search("sydney");
+
+// charAt, [], split
+
+// const value = str[26];
+// const value = str.charAt[20];
+
+// Slice, substring, substr
+
+// const value = str.slice(3, 5);
+// const value = str.slice(3);
+// const value = str.substring(3, 5);
+// const value = str.substr(3, 5);
+
+// Replace, contact, trim
+// const value = str.replace("bikal", "Adhikari");
+// const value = str.replace("e", "u");
+// const value = str.replaceAll("e", "u");
+// const value = str.trim().length;
+
+// toUpperCase, toLowerCase
+
+// const value = str.toUpperCase();
+const value = str.toLowerCase();
+
+console.log(str);
+console.log(value);
+// Array[]
+// Length, push , pop, shift, unshift, toString, join,[], splice, slice, indexOf
+// Short, reverse
+// forEach, map
+// Filter, reduce, every
+// forOf
