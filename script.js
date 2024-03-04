@@ -61,12 +61,6 @@ alert("hehehe");*/
 // const result = a <= b;
 // console.log(result);
 
-// Logical Operators
-// &&
-// ||
-// !
-// Ternary
-
 // Data types
 // Primitives
 // String  		// “prem acharya”
@@ -120,6 +114,77 @@ alert("hehehe");*/
 
 // const result = Math.min(0, 150, 30, 20, -8, -200);
 // const result = Math.max(0, 150, 30, 20, -8, -200);
-const result = Math.random() * 100; //0 - 9.999....
+// const result = Math.random() * 100; //0 - 9.999....
 
-console.log(result);
+// console.log(result);
+
+// Logical Operators
+// &&
+// ||
+// !
+// Ternary
+
+// conditional Statements
+
+// truthy: "absa", 10, true, {}, [], ()=>{}
+// falsy:"", 0, false, undefined, null
+
+// const age = 17;
+
+// const g = "f";
+// If
+// if (age >= 18 && g === "f") {
+// if (age >= 18 || g === "f") {
+//   console.log("Welcome to party!!");
+// }
+// if (age) {
+//   console.log("Welcome to party!!");
+// }
+// If else
+// if (age >= 18) {
+//   console.log("Welcome to party!!");
+// } else {
+//   console.log("sorry you are not allowed");
+// }
+
+// if (age >= 18) {
+//   console.log("Welcome to party!!");
+// } else {
+//   console.log("sorry you are not allowed");
+// }
+
+//   condition ? "if true...." : "if false..."
+
+// age >= 18
+//   ? console.log("Welcome to party!!")
+//   : console.log("sorry you are not allowed");
+
+// Else if
+
+const pet = "cow";
+
+// if (pet === "cat") {
+//   console.log("Meow!");
+// } else if (pet === "dog") {
+//   console.log("Woof");
+// } else if (pet === "cow") {
+//   console.log("mowowowow");
+// } else {
+//   console.log("duyvsviuhak buidvbdsic");
+// }
+// Switch
+
+switch (pet) {
+  case "cat":
+    console.log("Meow!");
+    break;
+  case "dog":
+    console.log("Woof");
+    break;
+  case "cow":
+    console.log("Moooowwww" + "!");
+    break;
+
+  default:
+    console.log("duyvsviuhak buidvbdsic");
+}
