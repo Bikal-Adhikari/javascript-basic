@@ -460,7 +460,7 @@ alert("hehehe");*/
 // 4. Create odd numbers and even numbers array based on the original array
 // 5. remove all the duplicate and create new array
 
-// let arr = [];
+// const arr = [];
 // for (i = 0; i < 50; i++) {
 //   arr[i] = Math.ceil(Math.random() * 100 + 1);
 // }
@@ -489,31 +489,104 @@ alert("hehehe");*/
 // console.log(oddarr);
 // console.log(evnarr);
 
-for (i = 0; i < 50; i++) {}
+// for (i = 0; i < 50; i++) {}
 
 // Challenge #2
 // Create an array of 50 unique random numbers range between 1 and 100 programitically
 
+// Challenge #1
+//1. Create an array of 50 random numbers range between 1 and 100 programmatically
+
+// const numArg = [];
+// for (let i = 0; i < 50; i++) {
+//   const num = Math.floor(Math.random() * 100) + 1;
+//   numArg.push(num);
+// }
+// console.log(numArg);
+
+//2. Sort the array in the descending order
+
+// numArg.sort((a, b) => a - b);
+// console.log(numArg);
+
+//3. Get the total value of array
+
+// const total = numArg.reduce((subttl, num) => {
+//   return subttl + num;
+// }, 0);
+
+// console.log(total);
+// 4. Create odd numbers and even numbers array based on the original array
+
+// const even = numArg.filter((num) => {
+//   return num % 2 === 0;
+// });
+
+// const odd = numArg.filter((num) => {
+//   return num % 2 !== 0;
+// });
+
+// console.log(even, odd);
+
+// 5. remove all the duplicate and create new array
+
+// const noDuplicateArg = [...new Set(numArg)];
+// console.log(noDuplicateArg);
+
+// const noDuplicateArg = [];
+// for (let i = 0; i < numArg.length; i++) {
+//   const n = numArg[i];
+//   if (!noDuplicateArg.includes(n)) {
+//     noDuplicateArg.push(n);
+//   }
+// }
+
+// console.log(noDuplicateArg);
+
+// Challenge #2
+// Create an array of 50 unique random numbers range between 1 and 100 programitically
+
+// const uniqueArray = [];
+// for (let x = 0; uniqueArray.length < 50; x++) {
+//   const num = Math.floor(Math.random() * 100) + 1;
+//   if (uniqueArray.indexOf(num) === -1) {
+//     uniqueArray.push(num);
+//   }
+// }
+
+// console.log(uniqueArray);
+
+// const uniqueArray = [];
+// let counter = 0;
+// while (uniqueArray.length < 50) {
+//   counter++;
+//   const num = Math.floor(Math.random() * 100) + 1;
+//   if (uniqueArray.indexOf(num) === -1) {
+//     uniqueArray.push(num);
+//   }
+// }
+// console.log(counter);
+// console.log(uniqueArray);
+
 // Challange #3
 
-// console.log("1. first one");
+console.log("1. first one");
 
-// const hehe = () => {
-//   console.log("2. hehe fuctioin");
-// };
+const hehe = () => {
+  console.log("2. hehe fuctioin");
+};
 
-// setTimeout(() => {
-//   console.log("3. set time out");
-// }, 5000);
+setTimeout(() => {
+  console.log("3. set time out");
+}, 5000);
 
-// const yoyo = () => {
-//   console.log("4. hehe fuctioin");
-// };
-// console.log("5. after yoyo");
-// yoyo();
-// setTimeout(() => {
-//   console.log("6. set time out");
-// }, 0);
-// hehe();
-// console.log("7. last line");
-// 1 7
+const yoyo = () => {
+  console.log("4. hehe fuctioin");
+};
+console.log("5. after yoyo");
+yoyo();
+setTimeout(() => {
+  console.log("6. set time out");
+}, 0);
+hehe();
+console.log("7. last line");
