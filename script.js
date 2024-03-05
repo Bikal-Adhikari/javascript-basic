@@ -570,23 +570,25 @@ alert("hehehe");*/
 
 // Challange #3
 
-console.log("1. first one");
+// debugger;
 
-const hehe = () => {
-  console.log("2. hehe fuctioin");
-};
+// console.log("1. first one");
 
-setTimeout(() => {
-  console.log("3. set time out");
-}, 5000);
+// const hehe = () => {
+//   console.log("2. hehe fuctioin");
+// };
 
-const yoyo = () => {
-  console.log("4. hehe fuctioin");
-};
-console.log("5. after yoyo");
-yoyo();
-setTimeout(() => {
-  console.log("6. set time out");
-}, 0);
-hehe();
-console.log("7. last line");
+// setTimeout(() => {
+//   console.log("3. set time out");
+// }, 5000);
+
+// const yoyo = () => {
+//   console.log("4. hehe fuctioin");
+// };
+// console.log("5. after yoyo");
+// yoyo();
+// setTimeout(() => {
+//   console.log("6. set time out");
+// }, 0);
+// hehe();
+// console.log("7. last line");
