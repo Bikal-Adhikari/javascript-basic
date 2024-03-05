@@ -592,3 +592,51 @@ alert("hehehe");*/
 // }, 0);
 // hehe();
 // console.log("7. last line");
+
+// Objects{}
+
+// const obj = {
+//   name: "Bikal",
+//   phon: 93887482,
+// };
+
+// console.log(obj.name);
+// console.log(obj["phon"]);
+
+const person = {
+  name: "Bikal Adhikari",
+  number: 73625727,
+  add: "1 Georgr st, Sydney",
+  married: false,
+  skills: ["html", "css", "js"],
+  parents: {
+    father: "Harry",
+    mother: "Merry",
+  },
+};
+// Property, assign, delete, copy, convert to array, loop
+
+person.name = "Sam Smith";
+person.skills.push("React");
+// delete person.married;
+console.log(person);
+console.log(person["name"]);
+
+// const newPerson = Object.assign({}, person);
+
+// Default + Rest + Spread
+
+//Rest
+// const { married, ...newPerson } = person;
+// console.log(married, newPerson);
+
+//Spread
+// const newPerson = { ...person };
+// newPerson.name = "Bikal";
+// console.log(newPerson);
+
+// Destructuring
+// Date()
+// Formate
+// Get Methods
+// Set Methods
