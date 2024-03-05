@@ -603,20 +603,20 @@ alert("hehehe");*/
 // console.log(obj.name);
 // console.log(obj["phon"]);
 
-const person = {
-  name: "Bikal Adhikari",
-  number: 73625727,
-  add: "1 Georgr st, Sydney",
-  married: false,
-  skills: ["html", "css", "js"],
-  parents: {
-    father: "Harry",
-    mother: "Merry",
-  },
-};
+// const person = {
+//   name: "Bikal Adhikari",
+//   number: 73625727,
+//   add: "1 Georgr st, Sydney",
+//   married: false,
+//   skills: ["html", "css", "js"],
+//   parents: {
+//     father: "Harry",
+//     mother: "Merry",
+//   },
+// };
 
-console.log(person);
-person.age = 20;
+// console.log(person);
+// person.age = 20;
 // Property, assign, delete, copy, convert to array, loop
 
 // person.name = "Sam Smith";
@@ -657,10 +657,6 @@ person.age = 20;
 // const argss = Object.entries(person);
 // console.log(argss);
 // Destructuring
-// Date()
-// Formate
-// Get Methods
-// Set Methods
 
 // Default + Rest + Spread
 
@@ -696,18 +692,103 @@ person.age = 20;
 // const johnBio = bio(bikObj);
 // console.log(johnBio);
 
-const career = {
-  position: "Developer",
-  started: "22-02-2023",
+// const career = {
+//   position: "Developer",
+//   started: "22-02-2023",
+// };
+
+// // combine to new one object
+
+// const combo = { ...person, ...career };
+// console.log(combo);
+
+// const a1 = [245, 567, 789];
+// const a2 = [455, 234, 2134];
+
+// const na = [...a1, ...a2];
+// console.log(na);
+
+// Date()
+
+// const dt = new Date("1999-09-19");
+// Get Methods
+// const val = dt.getDate();
+// const val = dt.getDay();
+// const val = dt.getFullYear();
+// console.log(dt.toDateString());
+// console.log(dt.toISOString());
+// console.log(dt.toLocaleString());
+// console.log(dt.toLocaleDateString());
+// const tm = Date.now();
+// console.log(tm);
+
+// Formate
+
+// Set Methods
+// dt.setDate(dt.getDate() + 5);
+// console.log(dt);
+
+// #challenge
+//1. create two food objects with name and expiry date.
+
+// const food1 = {
+//   n: "Milk",
+//   exp: "2024-03-10",
+// };
+
+// const food2 = {
+//   n: "egg",
+//   exp: "2024-03-03",
+// };
+
+// const check = ({ n, exp }) => {
+//   const dt = Date.now(exp);
+//   const today = Date.now();
+
+//   if (dt > today) {
+//     let calc = dt - today;
+
+//     return `you have ${calc} days left to use ${n}`;
+//   } else {
+//     calc = today - dt;
+//     return `${n} expired ${calc} days ago`;
+//   }
+// };
+
+// const ans = check(food1);
+// const ans2 = check(food2);
+
+// console.log(ans, ans2);
+
+//2. create function that checks the expiry date of any products and returns the value like:
+// if not expired: "you have 5 day left to use this food name"
+//if expired:"foodname expired 2 days ago"
+
+const foodArg = [
+  {
+    name: "milk",
+    exp: "2024-03-10",
+  },
+  {
+    name: "tuna",
+    exp: "2024-03-02",
+  },
+];
+
+const aDay = 24 * 60 * 60 * 1000;
+const checkExp = ({ name, exp }) => {
+  console.log(name);
+  const today = Date.now();
+  const expDate = new Date(exp).getTime();
+  const dayDiff = (expDate - today) / aDay;
+  if (dayDiff < 1) {
+    return `the ${name} is expired ${Math.floor(Math.abs(dayDiff))} days ago`;
+  } else {
+    return `You have ${Math.floor(dayDiff)} days to use your ${name}`;
+  }
 };
 
-// combine to new one object
-
-const combo = { ...person, ...career };
-console.log(combo);
-
-const a1 = [245, 567, 789];
-const a2 = [455, 234, 2134];
-
-const na = [...a1, ...a2];
-console.log(na);
+foodArg.forEach((item) => {
+  const result = checkExp(item);
+  console.log(result);
+});
