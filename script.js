@@ -614,13 +614,16 @@ const person = {
     mother: "Merry",
   },
 };
+
+console.log(person);
+person.age = 20;
 // Property, assign, delete, copy, convert to array, loop
 
-person.name = "Sam Smith";
-person.skills.push("React");
-// delete person.married;
-console.log(person);
-console.log(person["name"]);
+// person.name = "Sam Smith";
+// person.skills.push("React");
+// // delete person.married;
+// console.log(person);
+// console.log(person["name"]);
 
 // const newPerson = Object.assign({}, person);
 
@@ -635,8 +638,76 @@ console.log(person["name"]);
 // newPerson.name = "Bikal";
 // console.log(newPerson);
 
+//loop
+
+// for (let key in person) {
+//   console.log(key, person[key]);
+// }
+
+// convert to array
+
+// const keyArg = Object.keys(person);
+// keyArg.map((item) => console.log(person[item]));
+// console.log(keyArg);
+
+// const keyArg = Object.values(person);
+// keyArg.map((item) => console.log(item));
+// console.log(keyArg);
+
+// const argss = Object.entries(person);
+// console.log(argss);
 // Destructuring
 // Date()
 // Formate
 // Get Methods
 // Set Methods
+
+// Default + Rest + Spread
+
+// const bio = ({ a, n }) => {
+//   //   const { a, n } = pObj;
+//   //   return ` Hi there, this is ${name} from ${add}`;
+//   return ` Hi there, this is ${n} from ${a}`;
+// };
+
+// const parents = ({ f, m }) => {
+//   return `Their parents are ${f} and ${m}`;
+// };
+// const bio = ({ a = "n/a", n, ...rest }) =>
+//   ` Hi there, this is ${n} from ${a} ` + parents(rest);
+
+// const bikalObj = {
+//   n: "Bikal",
+//   a: "Sydney",
+//   f: "Sam",
+//   m: "Merry",
+// };
+
+// // const bikalBio = bio(bikalObj.n, bikalObj.a);
+// const bikalBio = bio(bikalObj);
+// console.log(bikalBio);
+
+// const bikObj = {
+//   n: "John",
+//   f: "ram",
+//   m: "sita",
+// };
+
+// const johnBio = bio(bikObj);
+// console.log(johnBio);
+
+const career = {
+  position: "Developer",
+  started: "22-02-2023",
+};
+
+// combine to new one object
+
+const combo = { ...person, ...career };
+console.log(combo);
+
+const a1 = [245, 567, 789];
+const a2 = [455, 234, 2134];
+
+const na = [...a1, ...a2];
+console.log(na);
