@@ -33,16 +33,23 @@
 // Constructor
 class Person {
   constructor(n, a) {
-    this.name = n;
-    this.add = a;
+    this.name = n.toUpperCase();
+    this.add = a.toUpperCase();
+  }
+  bio() {
+    return `hey, this is ${this.name} and I live in ${this.add}`;
   }
 }
 
 const bikObj = new Person("Bikal", "Sydney");
+
+bikObj.ph = 98756;
 console.log(bikObj);
+console.log(bikObj.bio());
 
 const jphnObj = new Person("Johhn", "London");
-console.log(jphnObj);
+// console.log(jphnObj);
+console.log(jphnObj.bio());
 
 // Encapsulation
 // Abstraction
