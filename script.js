@@ -764,31 +764,54 @@ alert("hehehe");*/
 // if not expired: "you have 5 day left to use this food name"
 //if expired:"foodname expired 2 days ago"
 
-const foodArg = [
-  {
-    name: "milk",
-    exp: "2024-03-10",
-  },
-  {
-    name: "tuna",
-    exp: "2024-03-02",
-  },
-];
+// const foodArg = [
+//   {
+//     name: "milk",
+//     exp: "2024-03-10",
+//   },
+//   {
+//     name: "tuna",
+//     exp: "2024-03-02",
+//   },
+// ];
 
-const aDay = 24 * 60 * 60 * 1000;
-const checkExp = ({ name, exp }) => {
-  console.log(name);
-  const today = Date.now();
-  const expDate = new Date(exp).getTime();
-  const dayDiff = (expDate - today) / aDay;
-  if (dayDiff < 1) {
-    return `the ${name} is expired ${Math.floor(Math.abs(dayDiff))} days ago`;
-  } else {
-    return `You have ${Math.floor(dayDiff)} days to use your ${name}`;
-  }
+// const aDay = 24 * 60 * 60 * 1000;
+// const checkExp = ({ name, exp }) => {
+//   console.log(name);
+//   const today = Date.now();
+//   const expDate = new Date(exp).getTime();
+//   const dayDiff = (expDate - today) / aDay;
+//   if (dayDiff < 1) {
+//     return `the ${name} is expired ${Math.floor(Math.abs(dayDiff))} days ago`;
+//   } else {
+//     return `You have ${Math.floor(dayDiff)} days to use your ${name}`;
+//   }
+// };
+
+// foodArg.forEach((item) => {
+//   const result = checkExp(item);
+//   console.log(result);
+// });
+
+const person = {
+  n: "Bikal",
+  add: "Sydney",
+  num: 9876,
 };
 
-foodArg.forEach((item) => {
-  const result = checkExp(item);
-  console.log(result);
-});
+const career = {
+  title: "Software Engineer",
+  exp: "2yrs",
+};
+
+const combo = {
+  ...person,
+  ...career,
+};
+
+console.log(combo);
+
+const { title, num, ...rest } = combo;
+
+// console.log(title, num);
+console.log(rest);
