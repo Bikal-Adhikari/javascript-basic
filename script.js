@@ -793,25 +793,29 @@ alert("hehehe");*/
 //   console.log(result);
 // });
 
-const person = {
-  n: "Bikal",
-  add: "Sydney",
-  num: 9876,
-};
+// const person = {
+//   n: "Bikal",
+//   add: "Sydney",
+//   num: 9876,
+// };
 
-const career = {
-  title: "Software Engineer",
-  exp: "2yrs",
-};
+// const career = {
+//   title: "Software Engineer",
+//   exp: "2yrs",
+// };
 
-const combo = {
-  ...person,
-  ...career,
-};
+// const combo = {
+//   ...person,
+//   ...career,
+// };
 
-console.log(combo);
+// console.log(combo);
 
-const { title, num, ...rest } = combo;
+// const { title, num, ...rest } = combo;
 
-// console.log(title, num);
-console.log(rest);
+// // console.log(title, num);
+// console.log(rest);
+
+// (() => {
+//   console.log("first");
+// })();
