@@ -183,18 +183,42 @@
 // console.log(result);
 
 //add the values and return the multiply function
-const addAndMultiply = (num1, num2) => {
-  const sum = num1 + num2;
-  const multiply = (multiplier) => {
-    return sum * multiplier;
-  };
+// const addAndMultiply = (num1, num2) => {
+//   const sum = num1 + num2;
+//   const multiply = (multiplier) => {
+//     return sum * multiplier;
+//   };
 
-  return multiply;
-};
+//   return multiply;
+// };
 
-const value = addAndMultiply(3, 5)(3);
-console.log(value);
+// const value = addAndMultiply(3, 5)(3);
+// console.log(value);
 // console.log(value(1));
 // console.log(value(2));
 // console.log(value(3));
+
 // Recursion
+// let counter = 1;
+// const multiply = (num) => {
+//   console.log(num + " x " + counter + " = " + num * counter++);
+//   if (counter <= 10) multiply(num);
+// };
+
+// multiply(5);
+// multiply(2);
+
+// debugger;
+// const amount = [234, 456, 789, 10, 25];
+
+// let sum = 0;
+// const total = (arg) => {
+//   sum += amount.pop();
+//   if (!arg.length) {
+//     return sum;
+//   }
+//   return total(arg);
+// };
+
+// const result = total(amount);
+// console.log(result);
